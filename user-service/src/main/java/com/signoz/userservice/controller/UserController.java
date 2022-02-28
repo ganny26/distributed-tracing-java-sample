@@ -30,4 +30,11 @@ public class UserController {
         return ResponseEntity.ok().body(user);
     }
 
+
+    @PutMapping(value = "/users/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Users> getUserById(@PathVariable("id") int id,@RequestBody Users users){
+        Users user = userservice.update(id,users);
+        return ResponseEntity.ok().body(user);
+    }
+
 }

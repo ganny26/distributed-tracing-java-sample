@@ -23,4 +23,11 @@ public class Userservice {
     public Users save(Users users){
         return userRepository.save(users);
     }
+
+    public Users update(int id,Users users){
+        Users userData = userRepository.findById(id).get();
+        userData.setAmount(users.getAmount());
+        userData.setStatus(users.getStatus());
+        return userRepository.save(userData);
+    }
 }

@@ -30,6 +30,8 @@ public class Users {
     private String account;
     @Column(name = "status",nullable = true)
     private String status;
+    @Column(name = "amount",nullable = true)
+    private String amount;
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
     private Date createdAt;
