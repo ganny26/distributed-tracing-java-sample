@@ -21,9 +21,11 @@ import io.opentelemetry.api.OpenTelemetry;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/payment")
+@CrossOrigin(origins = "*")
 public class PaymentController {
     private final Logger LOGGER = LoggerFactory.getLogger(PaymentController.class);
     private static final Tracer tracer =
