@@ -7,17 +7,13 @@ set -e
 
  # OpenTelemetry:
  # https://github.com/open-telemetry/opentelemetry-java-instrumentation
-# JAVA_OPTS="${JAVA_OPTS} \
-#   -Xms${JAVA_XMS} \
-#   -Xmx${JAVA_XMX} \
-#   -Dapplication.name=user-service-java \
-#   -Dotel.metrics.exporter=none \
-#   -Dotel.traces.exporter=otlp \
-#   -Dotel.resource.attributes=service.name=user-service-java \
-#   -Dotel.exporter.otlp.traces.endpoint=http://localhost:4317 \
-#   -Dotel.service.name=user-service-java \
-#   -Dotel.javaagent.debug=false \
-#   -javaagent:../agents/opentelemetry-javaagent.jar"
+ JAVA_OPTS="${JAVA_OPTS} \
+   -Xms${JAVA_XMS} \
+   -Xmx${JAVA_XMX} \
+   -Dotel.service.name=user-service-java \
+   -Dotel.traces.exporter=jaeger \
+   -Dotel.exporter.jaeger.endpoint=http://localhost:14250 \
+   -javaagent:../agents/opentelemetry-javaagent.jar"
 
 
 
