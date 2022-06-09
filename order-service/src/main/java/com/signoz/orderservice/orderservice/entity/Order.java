@@ -27,7 +27,7 @@ public class Order {
     private String account;
     @Column(name = "product_name",nullable = true)
     private String productName;
-    @Column(name = "price",nullable = true)
+    @Column(name = "price",nullable = true)x
     private String price;
     @Column(name = "order_status",nullable = true)
     private String orderStatus;
