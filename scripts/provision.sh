@@ -23,12 +23,14 @@ newgrp docker./
 sudo yum -y install java-11-openjdk
 
 sudo systemctl start docker
+sudo docker network create -d bridge hermes
+
 
 # set up db container
 sudo yum install -y postgresql
-sudo docker run --name postgres -e POSTGRES_PASSWORD=admin -p 5432:5432 -d docker.io/library/postgres:latest
+sudo docker run --name postgres --network=hermes -e POSTGRES_PASSWORD=admin -p 5432:5432 -d docker.io/library/postgres:latest
 
-until [ "$(sudo docker inspect -f {{.State.Running}} postgres_db)" == "true" ]; do
+until [ "$(sudo docker inspect -f {{.State.Running}} postgres)" == "true" ]; do
     sleep 1;
     echo "."
 done;
@@ -55,3 +57,4 @@ done;
 
 # Install maven
 sudo -y yum install maven
+sudo -y yum install npm

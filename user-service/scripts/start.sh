@@ -13,9 +13,9 @@ set -e
    -Dotel.service.name=user-service-java \
    -Dotel.traces.exporter=jaeger \
    -Dotel.exporter.jaeger.endpoint=http://localhost:14250 \
-   -javaagent:../agents/opentelemetry-javaagent.jar"
+   -javaagent:/app/bin/agents/opentelemetry-javaagent.jar"
 
 
 
 exec java ${JAVA_OPTS} \
-  -jar "../target/user-service-0.0.1-SNAPSHOT.jar" \
+  -jar "/app/bin/user-service.jar" \

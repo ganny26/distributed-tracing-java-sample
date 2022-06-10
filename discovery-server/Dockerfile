@@ -1,6 +1,6 @@
 # NOTE: Users must mount the Spring config file to /config/application.yml.
 
-FROM openjdk:8-jre
+FROM openjdk:11-jre
 
 ENV APP_HOME /app/bin
 
