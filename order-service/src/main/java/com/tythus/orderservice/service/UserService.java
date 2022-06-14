@@ -1,7 +1,7 @@
-package com.tythus.orderservice.orderservice.service;
+package com.tythus.orderservice.service;
 
-import com.tythus.orderservice.orderservice.entity.User;
-import com.tythus.orderservice.orderservice.repository.UserRepository;
+import com.tythus.orderservice.entity.User;
+import com.tythus.orderservice.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service

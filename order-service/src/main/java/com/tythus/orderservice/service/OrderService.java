@@ -1,12 +1,12 @@
-package com.tythus.orderservice.orderservice.service;
+package com.tythus.orderservice.service;
 
-import com.tythus.orderservice.orderservice.entity.Order;
-import com.tythus.orderservice.orderservice.entity.User;
-import com.tythus.orderservice.orderservice.feign.UserFeignClient;
-import com.tythus.orderservice.orderservice.feign.PaymentFeignClient;
-import com.tythus.orderservice.orderservice.repository.OrderRepository;
-import com.tythus.orderservice.orderservice.repository.UserRepository;
-import com.tythus.orderservice.orderservice.task.FileEncrypterDecrypterTask;
+import com.tythus.orderservice.feign.PaymentFeignClient;
+import com.tythus.orderservice.feign.UserFeignClient;
+import com.tythus.orderservice.entity.Order;
+import com.tythus.orderservice.entity.User;
+import com.tythus.orderservice.repository.OrderRepository;
+import com.tythus.orderservice.repository.UserRepository;
+import com.tythus.orderservice.task.FileEncrypterDecrypterTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.slf4j.Logger;

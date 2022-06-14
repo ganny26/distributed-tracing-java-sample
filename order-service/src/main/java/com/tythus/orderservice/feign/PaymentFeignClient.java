@@ -1,4 +1,4 @@
-package com.tythus.orderservice.orderservice.feign;
+package com.tythus.orderservice.feign;
 
 
 import org.springframework.cloud.openfeign.FeignClient;

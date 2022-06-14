@@ -1,7 +1,7 @@
-package com.signoz.userservice.controller;
+package com.tythus.userservice.controller;
 
-import com.signoz.userservice.entity.Users;
-import com.signoz.userservice.service.Userservice;
+import com.tythus.userservice.entity.Users;
+import com.tythus.userservice.service.Userservice;
 import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

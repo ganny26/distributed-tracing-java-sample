@@ -1,7 +1,7 @@
-package com.tythus.orderservice.orderservice.controller;
+package com.tythus.orderservice.controller;
 
-import com.tythus.orderservice.orderservice.entity.Order;
-import com.tythus.orderservice.orderservice.service.OrderService;
+import com.tythus.orderservice.entity.Order;
+import com.tythus.orderservice.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.tythus.orderservice.orderservice;
+package com.tythus.orderservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

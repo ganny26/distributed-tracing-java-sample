@@ -1,4 +1,4 @@
-package com.tythus.orderservice.orderservice.task;
+package com.tythus.orderservice.task;
 
 import javax.crypto.*;
 import javax.crypto.spec.IvParameterSpec;

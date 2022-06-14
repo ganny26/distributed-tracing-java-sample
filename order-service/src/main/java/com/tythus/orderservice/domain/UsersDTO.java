@@ -1,4 +1,4 @@
-package com.tythus.orderservice.orderservice.domain;
+package com.tythus.orderservice.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

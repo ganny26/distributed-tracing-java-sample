@@ -1,8 +1,8 @@
-package com.signoz.userservice.service;
+package com.tythus.userservice.service;
 
 
-import com.signoz.userservice.entity.Users;
-import com.signoz.userservice.repository.UserRepository;
+import com.tythus.userservice.entity.Users;
+import com.tythus.userservice.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

@@ -1,6 +1,6 @@
-package com.tythus.orderservice.orderservice.repository;
+package com.tythus.orderservice.repository;
 
-import com.tythus.orderservice.orderservice.entity.Order;
+import com.tythus.orderservice.entity.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

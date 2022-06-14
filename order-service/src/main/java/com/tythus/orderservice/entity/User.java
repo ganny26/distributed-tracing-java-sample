@@ -1,4 +1,4 @@
-package com.tythus.orderservice.orderservice.entity;
+package com.tythus.orderservice.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

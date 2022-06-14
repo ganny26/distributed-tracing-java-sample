@@ -1,7 +1,7 @@
-package com.tythus.orderservice.orderservice.feign;
+package com.tythus.orderservice.feign;
 
 
-import com.tythus.orderservice.orderservice.entity.User;
+import com.tythus.orderservice.entity.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
