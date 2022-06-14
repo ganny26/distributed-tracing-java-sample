@@ -14,6 +14,5 @@ set -e
    -javaagent:/app/bin/agents/opentelemetry-javaagent.jar"
 
 
-
 exec java ${JAVA_OPTS} \
   -jar "/app/bin/order-service.jar" \

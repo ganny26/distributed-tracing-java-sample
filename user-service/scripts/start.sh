@@ -5,8 +5,6 @@
 
 set -e
 
- # OpenTelemetry:
- # https://github.com/open-telemetry/opentelemetry-java-instrumentation
  JAVA_OPTS="${JAVA_OPTS} \
    -Xms${JAVA_XMS} \
    -Xmx${JAVA_XMX} \

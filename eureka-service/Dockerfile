@@ -4,7 +4,7 @@ FROM openjdk:11-jre
 
 ENV APP_HOME /app/bin
 
-COPY ./build/discovery-server-*.jar ${APP_HOME}/discovery-server.jar
+COPY ./build/libs/discovery-server-*.jar ${APP_HOME}/discovery-server.jar
 COPY scripts/start.sh ${APP_HOME}/
 
 WORKDIR ${APP_HOME}

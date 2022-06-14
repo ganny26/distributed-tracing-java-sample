@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id("org.springframework.boot") version "2.7.0"
 }
 
 repositories {
@@ -14,6 +15,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web:2.6.4'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:3.1.1'
     implementation 'org.hibernate:hibernate-core:5.6.1.Final'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
     implementation 'jakarta.ws.rs:jakarta.ws.rs-api:3.1.0'
     implementation 'org.projectlombok:lombok:1.18.22'
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:2.2.1.RELEASE'
