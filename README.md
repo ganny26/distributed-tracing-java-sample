@@ -12,7 +12,7 @@ This application require Eureka service registry
 
 ```
 cd discovery-server
-mvn clean install -Dmaven.test.skip
+gradle bootJar
 docker build -t discovery-service:1.0.1 .
 docker run -d --name discovery-service -p 8761:8761 discovery-service:1.0.1
 ```
@@ -27,7 +27,7 @@ Start individual microservice using below commands
 cd user-service || exit
 sudo docker stop user-service || true
 sudo docker rm user-service || true
-mvn clean install -Dmaven.test.skip
+gradle bootJar
 sudo docker build -t user-service .
 sudo docker run -d --network host --name user-service user-service
 cd -
@@ -39,7 +39,7 @@ cd -
 cd order-service || exit
 sudo docker stop order-service || true
 sudo docker rm order-service || true
-mvn clean install -Dmaven.test.skip
+gradle bootJar
 sudo docker build -t order-service .
 sudo docker run -d --network host --name order-service order-service
 cd -
@@ -52,7 +52,7 @@ cd -
 cd payment-service || exit
 sudo docker stop payment-service || true
 sudo docker rm payment-service || true
-mvn clean install -Dmaven.test.skip
+gradle bootJar
 sudo docker build -t order-service .
 sudo docker run -d --network host --name payment-service order-service
 cd -
