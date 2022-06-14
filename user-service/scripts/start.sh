@@ -12,7 +12,7 @@ set -e
    -Xmx${JAVA_XMX} \
    -Dotel.service.name=user-service-java \
    -Dotel.traces.exporter=jaeger \
-   -Dotel.exporter.jaeger.endpoint=http://localhost:14250 \
+   -Dotel.exporter.jaeger.endpoint=http://some-place-over-the-rainbow:14250 \
    -javaagent:/app/bin/agents/opentelemetry-javaagent.jar"
 
 
